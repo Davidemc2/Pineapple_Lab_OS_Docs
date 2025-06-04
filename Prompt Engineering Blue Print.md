@@ -13,11 +13,6 @@ This guide is part of an evolving set of findings from Pineapple Labs. I'm David
 The idea behind publishing this is to open-source the design patterns, techniques, and structures I've found useful when working with LLMs like GPT, Claude, and DeepSeek. Prompting isn’t just about formatting text — it’s about shaping behavior, logic, and reliability inside intelligent systems.
 
 The goal is to make these findings public, collaborative, and useful — not just for Pineapple Labs, but for builders, researchers, and technologists everywhere who care about designing more trustworthy, performant agents.
-This blueprint enables you to:
-
-* Craft modular, testable prompts for **GPT**, **Claude**, and **DeepSeek**
-* Build reliable **niche AI agents** with strong identity and behavior
-* Scale structured prompting across product teams and memory systems
 
 ---
 
@@ -108,19 +103,58 @@ Output: "Hi, could you please clarify what you need help with?"
 
 ---
 
-## 🚨 7. EVALUATION & SAFETY CLAUSE
+## 🚨 7. EVALUATION & ESCAPE HATCHES
+
+### 🔍 Failure Modes
+
+* Ambiguous input → vague output
+* Over-specification → rigid, non-generalizable output
+* Lack of output constraints → verbosity or hallucinations
+* Conflict between system prompt and instruction → breakdown in task logic
+
+### ✅ Escape Hatches
 
 ```text
-If uncertain or info is missing, say: "I need more information to proceed."
+If you are uncertain, or cannot complete the task with the input provided, say:
+"I need clarification to proceed: [insert specific clarification request]"
 ```
 
-**Claude:** respond explicitly to missing info
-**GPT:** encourages meta-reasoning
-**DeepSeek:** avoids misgenerated logic
+**Why:** This enables graceful degradation and safe fail states. Especially important for GPT-4 and Claude.
+
+### 📊 Evaluation Methods
+
+Use this checklist to test prompt reliability:
+
+* ✅ 3x consistency on regenerate
+* ✅ Valid JSON or Markdown formatting
+* ✅ Passes tone/style alignment checks
+* ✅ Logical flow mirrors intended reasoning chain
+* ✅ No hallucinations in factual queries
+* ✅ Latency and token cost within expected bounds
 
 ---
 
-## 🔍 Model-Specific Prompting Notes
+## 🔢 VERSIONING PHILOSOPHY
+
+Prompts evolve like software.
+
+```json
+{
+  "prompt_id": "legal_summary_v1.2.0",
+  "changes": "Added tone constraint + updated examples",
+  "owner": "pineapple-labs"
+}
+```
+
+**Best Practices:**
+
+* `MAJOR.MINOR.PATCH` structure (v2.1.3)
+* Keep changelogs per prompt
+* Store prompt history (e.g., Chroma, GitHub, Pinecone metadata)
+
+---
+
+## 🧠 Model-Specific Prompting Notes
 
 ### 🤖 GPT-4
 
@@ -154,21 +188,31 @@ If uncertain or info is missing, say: "I need more information to proceed."
 
 ---
 
-## 🧠 Agent Prompt Memory Strategy
+## 🧬 Real-World Prompt Blueprints
 
-Bind prompts into agent memory for consistent behavior:
+### 🏛 Legal Compliance GPT
 
-```json
-{
-  "prompt_id": "refund_policy_v1",
-  "agent": "SupportGPT",
-  "logic": ["check purchase date", "evaluate user tier"],
-  "output_format": "bullet list",
-  "constraints": "polite, < 100 words"
-}
+```text
+You are a compliance advisor for financial regulation. Summarize key infractions and cite the relevant law.
+Input: [legal document]
+Output: JSON: { violations: [], citations: [], summary }
 ```
 
-Store this in Weaviate, MemGPT, Chroma, etc.
+### 📞 Support Chat Optimizer
+
+```text
+You are a tier-2 support agent. Rephrase the issue into a format for engineering triage.
+Input: [customer message]
+Output: JSON: { issue_summary, urgency_level, component_tag }
+```
+
+### 📊 Analyst Assistant GPT
+
+```text
+You are a data analyst at a SaaS company. Identify three insights based on growth metrics.
+Input: [monthly performance report]
+Output: Markdown: - Insight 1: ...
+```
 
 ---
 
@@ -219,4 +263,5 @@ If source is unclear, state "Document lacks clarity on policy outcome."
 * *Designing Machine Learning Systems* by Chip Huyen
 * *Deep Learning* by Ian Goodfellow et al.
 * *Prompt Engineering Guide* ([https://github.com/dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide))
-* Pineapple Labs Internal Research – OS Brick runtime & memory container architecture
+* Pineapple Labs Internal Research – OS Brick runtime & behavior design
+
