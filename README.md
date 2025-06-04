@@ -1,100 +1,114 @@
-# 🧠 Modular Prompt Engineering Blueprint
+# 🧠 Pineapple Lab OS Docs
 
-Welcome to the official prompt engineering framework from **Pineapple Labs** — a battle-tested, modular guide for building high-performance AI systems using GPT-4, Claude, and DeepSeek.
+Welcome to the Pineapple Lab OS Docs — an open-source GitHub repository designed to share Pineapple Labs' white papers, internal documentation, and community-facing research in the AI systems space.
 
----
+This includes our first public release: the **Prompt Engineering Blueprint**, a practical guide to LLM behavior design, structured reasoning, and modular prompt workflows.
 
-## 🚀 Overview
+> 🧪 I’m David Edwards. This repo is where I collect findings, test ideas, and publish what works — and what doesn't — in building composable, safe, and production-minded AI agents.
 
-This repo provides a production-grade blueprint for designing and scaling **structured, testable prompts** across different LLM platforms. It enables developers, researchers, and product teams to:
+You're welcome to fork, clone, copy, remix, and apply this material to your engineering teams, research work, or agent runtime stacks.
 
-- Build **niche AI agents** with strong behavior alignment
-- Version and test prompts like code
-- Embed prompt memory in systems like OS Brick, LangChain, or MemGPT
-- Prevent hallucinations, overgeneration, and prompt drift
+Contributions, feedback, and wild ideas are all welcome — this is a lab, not a product.
 
----
+Welcome to Pineapple Labs' **Prompt Engineering Blueprint** — a living document and open research effort exploring new techniques in LLM prompt design, AI agent structuring, and modular memory-bound workflows.
 
-## 🧱 Architecture
-
-Our system is based on 6 modular components:
-
-1. **System Declaration** – Define role, domain, and tone
-2. **Instruction Block** – State the exact task
-3. **Logic Flow** – Use chain-of-thought or IF/ELSE logic
-4. **Input / Output Segmentation** – Prevent context bleed
-5. **Formatting Constraints** – JSON / Markdown / length
-6. **Evaluation Clause** – Gracefully handle uncertainty
-
-> 💡 Prompts are treated as structured functions, not just raw text.
+> 🧪 This repo is my lab notebook. I’m David Edwards, and this is where I capture, refine, and share what I’m learning in the AI engineering space — especially around language model behavior and prompt-driven control systems.
 
 ---
 
-## 📦 Included Files
+## 🌍 Purpose
 
-| File / Folder         | Purpose                                                |
-|-----------------------|--------------------------------------------------------|
-| `Prompting_Blueprint_Guide.md` | Core guide to modular prompt engineering             |
-| `examples/`            | Domain-specific prompts for finance, law, tech, etc.  |
-| `prompt_registry.json` | Optional JSON structure for loading prompts in-code   |
-| `CONTRIBUTING.md`     | Contribution guidelines                                |
-| `SECURITY.md`         | Prompt injection safety + validation rules             |
+This repo is part of the **Pineapple Lab OS Docs** — a growing open-source GitHub space for publishing Pineapple Labs' research, tooling, and findings around AI systems.
 
----
+At its core, Pineapple Lab OS is about building a public R\&D hub for the AI community. The documents and blueprints here are based on real experiments, systems design efforts, and exploratory research. We believe in transparent collaboration and open sourcing not just code, but thinking.
 
-## 🧑‍💻 Quickstart
+This project specifically focuses on:
 
-1. Clone the repo
-2. Use the blueprint to design your first prompt
-3. Copy into your LLM stack (OpenAI, Claude, DeepSeek, OS Brick)
-4. Evaluate using our checklist
-5. Iterate or commit to your `prompt_registry.json`
+This project exists to:
+
+* Publish **tested, reusable prompting patterns** for GPT, Claude, and DeepSeek
+* Develop a **modular design system** for niche AI agent behavior
+* Share Pineapple Labs research findings publicly
+* Invite open-source contributions from fellow builders
+
+This is not a static spec — it’s an evolving playbook for how I build LLM systems, and an open call for collaboration.
 
 ---
 
-## 📊 Evaluation Checklist
+## 📦 What’s Inside
 
-- ✅ Clear instructions
-- 🔁 Consistent output (regenerate 3–5x)
-- 📎 Correct format and tone
-- 🧠 Hallucination-safe
-- 🧩 Reusable logic blocks
-
----
-
-## 📚 Sources & Inspirations
-
-- [Anthropic Claude Prompting Best Practices](https://docs.anthropic.com/claude/prompt-engineering)
-- [OpenAI Function Calling & Prompting Docs](https://platform.openai.com/docs)
-- [Deepgram Prompt Engineering Masterclass](https://deepgram.com/learn/prompt-engineering-masterclass)
-- *Designing Machine Learning Systems* – Chip Huyen
-- *Prompt Engineering Guide* – CrossML
-- Pineapple Labs internal OS Brick research
+| File / Folder                        | Description                                                         |
+| ------------------------------------ | ------------------------------------------------------------------- |
+| `Prompting_Blueprint_Guide.md`       | The core modular guide for engineering structured prompts           |
+| `examples/`                          | Prompt examples for specific agent types (legal, support, devtools) |
+| `prompt_registry.json` (coming soon) | Registry for programmatically loading prompts                       |
+| `SECURITY.md` (coming soon)          | Prompt injection risks + safe usage policies                        |
+| `CONTRIBUTING.md` (coming soon)      | How to contribute new prompt blocks or test cases                   |
 
 ---
 
-## 🛡 Security Note
+## 🔧 Quickstart
 
-Use `SECURITY.md` to understand prompt injection threats and best practices for LLMs with memory or user-provided inputs.
-
----
-
-## 🧪 Want to Contribute?
-
-We welcome PRs with:
-- New vertical-specific prompts
-- Output format validators
-- LLM evaluation scripts
-- Agent persona blueprints
-
-Read `CONTRIBUTING.md` to learn how.
+1. Clone this repo
+2. Read the [Prompting Blueprint Guide](./Prompting_Blueprint_Guide.md)
+3. Copy a blueprint and start prototyping your prompt
+4. Test in Claude, GPT-4, or DeepSeek
+5. Refine and (optionally) submit back to the project
 
 ---
 
-## 🧬 Part of the Pineapple Labs White Paper System
+## 🧠 Design Principles
 
-This project is the seed of our open-source research initiative into secure, memory-retaining, modular AI agents. Expect future white papers, research tools, and API integrations.
+* **Clarity first** — every prompt block is modular and intentional
+* **Structure > Style** — we treat prompts like functions, not text
+* **Security-aware** — special attention to injection risks and ambiguity
+* **Multi-model** — designed for Claude, GPT, DeepSeek from the start
+* **Open Research** — Pineapple Labs is an open-source-first R\&D space
 
-> Designed by OS Brick. Powered by prompt composability. Built for real systems.
+---
+
+## 🧱 In Progress
+
+* `prompt_registry.json` — structured schema for prompts-as-code
+* `tests/` — prompt regression + consistency tests
+* `agent_templates/` — blueprints for repeatable, role-specific GPTs
+* `whitepaper.md` — outlining Pineapple Labs' approach to modular agents
+
+---
+
+## 🧬 A Note from Me
+
+This project is the backbone of how I build AI agents for products like OS Brick. Whether you're exploring prompt chaining, ReAct logic, memory containerization, or persona design — this repo is yours to explore, extend, and question.
+
+Thanks for being curious,
+
+**– David Edwards / Pineapple Labs**
+
+---
+
+## 📚 References
+
+* [OpenAI Prompt Engineering Docs](https://platform.openai.com/docs)
+* [Anthropic Claude Prompting](https://docs.anthropic.com/claude/prompt-engineering)
+* [Deepgram Prompting Masterclass](https://deepgram.com/learn/prompt-engineering-masterclass)
+* [Prompt Engineering Guide – DAIR AI](https://github.com/dair-ai/Prompt-Engineering-Guide)
+* [Chip Huyen – Designing ML Systems](https://huyenchip.com/ml-interviews-book/)
+* [CrossML Blueprint PDF](https://www.crossml.com/wp-content/uploads/2024/02/Prompt-Engineering-A-Blueprint-for-AI-Excellence.pdf)
+
+---
+
+## 📬 Contributions
+
+Contributions are welcome — especially from practitioners working in:
+
+* LLMops
+* Prompt security
+* Multi-agent orchestration
+* Persona logic / system memory design
+
+PRs, test cases, new prompt types, and issue tickets are all appreciated.
+
+Let’s build smarter systems together.
+
 
 ---
