@@ -40,6 +40,7 @@ This is not a static spec — it’s an evolving playbook for how I build LLM sy
 | File / Folder                        | Description                                                         |
 | ------------------------------------ | ------------------------------------------------------------------- |
 | `Prompting_Blueprint_Guide.md`       | The core modular guide for engineering structured prompts           |
+| `Pineapple_Lab_Advanced_AI_Verification_Systems.md` | Research on Truth Optimization Engine, Benchmarking Loop System, and Live Documentation Index |
 | `examples/`                          | Prompt examples for specific agent types (legal, support, devtools) |
 | `prompt_registry.json` (coming soon) | Registry for programmatically loading prompts                       |
 | `SECURITY.md` (coming soon)          | Prompt injection risks + safe usage policies                        |
