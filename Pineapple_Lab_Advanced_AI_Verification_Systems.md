@@ -321,9 +321,15 @@ This implementation has been tested against real data and meets performance benc
 
 How do we verify that AI-generated code works on real problems, not just theoretical scenarios?
 
+**Important Distinction**: This system is separate from unit test generation. It's specifically for testing production bug fixes against real-world issues.
+
 ### Research Approach
 
 Create a continuous feedback loop where AI-generated code is tested against real-world benchmarks, and failures trigger iterative improvement.
+
+**Key Difference from Unit Testing**: 
+- **Unit Tests**: Test specific methods with specific inputs
+- **Benchmark Testing**: Test entire fixes against real production issues
 
 ### Methodology
 
@@ -446,6 +452,20 @@ Verification:
 - **Commit0 Success Rate**: 82% on code generation
 - **CI Build Repair**: 54% on build failure resolution
 - **Iterative Improvement**: 15% improvement per iteration cycle
+
+### When to Use This System
+
+**Use Benchmark Loop System for:**
+- ✅ Production bug fixes
+- ✅ End-to-end testing
+- ✅ Real-world issue resolution
+- ✅ Complex system interactions
+
+**Use Unit Test Generation for:**
+- ✅ Testing specific methods
+- ✅ Code coverage
+- ✅ Function-level validation
+- ✅ Development-time testing
 
 ---
 
@@ -681,6 +701,49 @@ Result: Efficient, focused, human-like development
 - **Scalability**: Works regardless of project size
 
 ---
+
+## Friday Unified Implementation
+
+### How Friday Separates Unit Tests from Benchmark Testing
+
+Friday implements both systems separately to avoid confusion:
+
+**Unit Test Generation (TDDIntegrationSystem):**
+```javascript
+// For writing unit tests for specific code
+if (options.enableTDD !== false) {
+  console.log('🧪 Phase 2: Test-Driven Development Integration (Unit Tests)');
+  tddResult = await this.tddIntegrationSystem.coordinateTDDWorkflow(
+    userRequest,
+    projectPath,
+    this.agents,
+    options
+  );
+}
+```
+
+**Benchmark Testing (BenchmarkLoopSystem):**
+```javascript
+// For testing production bug fixes against real issues
+if (options.enableBenchmarkTesting === true) {
+  console.log('🧪 Phase 2.5: Benchmark Loop System (Production Bug Fixes)');
+  benchmarkResult = await this.benchmarkLoopSystem.testAgainstRealIssues(
+    userRequest,
+    projectPath,
+    {
+      benchmarkType: 'swe-bench',
+      maxIterations: 3,
+      failureAnalysis: true
+    }
+  );
+}
+```
+
+**Key Separation:**
+- **Unit Tests**: `enableTDD` option (default: true)
+- **Benchmark Testing**: `enableBenchmarkTesting` option (default: false)
+- **Different Phases**: Phase 2 vs Phase 2.5
+- **Different Purposes**: Method testing vs Production testing
 
 ## Integration: How Systems Work Together
 
