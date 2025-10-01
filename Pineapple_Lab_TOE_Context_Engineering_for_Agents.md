@@ -1,7 +1,14 @@
-# AI Verification Systems: Truth Optimization Engine (TOE)
-## A Research Guide to Ensuring AI Output Quality
+# Truth Optimization Engine (TOE): Context Engineering for AI Agents
+## Production-Ready AI Systems with Verified Output Quality
 
-*Contributing to Pineapple Lab OS Docs - AI Systems Research*
+*Part of the Pineapple Lab OS Docs - Advanced AI Systems Research*
+
+**Referenced from**: [Prompt Engineering Blueprint](Prompt_Engineering_Blueprint.md) - This document provides production implementation of Truth Optimization principles introduced in the Blueprint.
+
+**Related Guides**:
+- [Starting Guide for Newbies](Starting_Guide_for_Newbies_Prompt_Engineering.md) - Introduction to TOE concepts
+- [XML Tag Structuring](XML_Tag_Structuring_Guide.md) - Structural organization for TOE prompts
+- [Advanced Logic Building](Advanced_Logic_Building_Guide.md) - Logic frameworks enhanced with TOE
 
 ---
 
