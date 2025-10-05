@@ -1,6 +1,6 @@
 # 🤝 Contributing to Pineapple Lab OS Docs
 
-Thanks for your interest in contributing to the Pineapple Lab OS Docs. This is an open, research-driven space exploring advanced prompt engineering and agent design. Whether you want to tweak a typo, add a prompt, or propose new evaluation logic — you're welcome here.
+Thanks for your interest in contributing to the Pineapple Lab OS Docs. This is an open learning space where I share what I'm discovering about prompt engineering and agent design. Whether you want to fix a typo, add examples, improve documentation, or share your own patterns — you're welcome here.
 
 ---
 
@@ -97,6 +97,6 @@ How the model should handle ambiguity
 * Open an issue with your idea
 * Or contact David Edwards directly via GitHub
 
-Let’s build AI blueprints worth sharing.
+Let's learn and build together.
 
-— Pineapple Labs 🍍
+— David Edwards / Pineapple Lab 🍍
