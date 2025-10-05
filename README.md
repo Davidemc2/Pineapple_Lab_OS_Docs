@@ -1,14 +1,14 @@
 # 🧠 Pineapple Lab OS Docs
 
-Welcome to **Pineapple Lab OS Docs** — the definitive open-source resource for advanced prompt engineering, context engineering, and AI agent design.
+Welcome to **Pineapple Lab OS Docs** — a practitioner's guide to prompt engineering, compiling and organizing techniques from Anthropic, Google, OpenAI, and academic research.
 
-This repository shares Pineapple Labs' research, methodologies, and practical frameworks for building reliable, production-ready AI systems. From beginner-friendly introductions to advanced reasoning frameworks, we provide comprehensive, research-backed guidance for engineering AI behavior.
+This repository shares how I've learned, organized, tested, and applied prompt engineering best practices while building AI products at Pineapple Lab. From beginner-friendly introductions to advanced reasoning frameworks, this is a comprehensive learning resource built on the shoulders of giants.
 
-> 🧪 **I'm David Edwards.** This repo is where I collect findings, test ideas, and publish what works — and what doesn't — in building composable, safe, and production-minded AI agents.
+> 🧪 **I'm David Edwards.** I'm 21, building AI products in South Africa, and I love to learn. This repo is where I organize what I learn from brilliant researchers and engineers, test it in real projects, and share it so others don't have to spend months reading scattered documentation like I did.
 
-You're welcome to fork, clone, copy, remix, and apply this material to your engineering teams, research work, or agent runtime stacks.
+You're welcome to fork, clone, copy, remix, and apply this material to your work.
 
-**Contributions, feedback, and wild ideas are all welcome — this is a lab, not a product.**
+**Contributions, feedback, and honest corrections are all welcome — I'm learning in public.**
 
 ---
 
@@ -27,19 +27,19 @@ Building production AI systems? Explore our specialized guides on [XML Tag Struc
 
 ## 🌍 Purpose
 
-This repo is part of the **Pineapple Lab OS** — a growing open-source hub for publishing Pineapple Labs' research, tooling, and findings around AI systems.
+This repo is where I organize and share what I'm learning about prompt engineering as I build AI products.
 
-At its core, Pineapple Lab OS is about **building a public R&D hub for the AI community**. The documents and blueprints here are based on real experiments, systems design efforts, and exploratory research. We believe in transparent collaboration and open sourcing not just code, but thinking.
+At its core, this is about **learning in public and helping others**. The documents here are based on studying official documentation from AI labs (Anthropic, Google, OpenAI), reading academic papers (Wei et al., Kojima et al., and others), and testing everything while building real products like RITA and OS Brick.
 
 ### This Project Exists To:
 
-- 📚 Publish **tested, reusable prompting patterns** for GPT, Claude, DeepSeek, and Gemini
-- 🏗️ Develop a **modular design system** for sophisticated AI agent behavior
-- 🔬 Share **research-backed methodologies** for improving AI reliability and honesty
-- 🤝 Invite **open-source contributions** from fellow builders and researchers
-- 🚀 Advance the **state of the art** in prompt engineering and context engineering
+- 📚 Organize **tested, reusable prompting patterns** for GPT, Claude, DeepSeek, and Gemini
+- 🏗️ Share a **systematic framework** for prompt engineering that I've found helpful
+- 🔬 Compile **techniques from research and industry** in one accessible place
+- 🤝 Invite **open-source contributions** from fellow builders and learners
+- 🚀 Make prompt engineering **accessible and practical** for everyone
 
-This is not a static spec — it's an **evolving playbook** for how we build LLM systems, and an open call for collaboration.
+This is not a static spec — it's an **evolving learning journal**, and an open invitation to learn together.
 
 ---
 
@@ -69,6 +69,34 @@ This is not a static spec — it's an **evolving playbook** for how we build LLM
 
 ---
 
+---
+
+## 🎯 What This Repository IS and IS NOT
+
+### ✅ What This IS:
+- **A practitioner's synthesis** of prompt engineering techniques from multiple authoritative sources
+- **Organized documentation** of what works in real production applications
+- **Real-world examples** from building AI products (RITA, OS Brick, and other Pineapple Lab projects)
+- **Learning resource** structured from beginner to advanced
+- **My personal framework** for organizing and applying prompt engineering knowledge
+- **Honest curation** of brilliant work by researchers and engineers at major AI labs
+
+### ❌ What This IS NOT:
+- Novel academic research (I cite the researchers who did that work)
+- Peer-reviewed or scientifically validated findings  
+- Claims of breakthrough innovations or inventions
+- Replacement for official documentation from AI labs
+- Formal benchmarking studies with controlled experiments
+
+### 🎓 My Contribution:
+I'm a 21-year-old builder learning in public. I've spent months reading documentation from Anthropic, Google, and OpenAI. I've studied academic papers like Wei et al.'s Chain-of-Thought (19,810+ citations) and Kojima et al.'s Zero-Shot CoT. I've tested these techniques extensively while building real AI products.
+
+**What I'm sharing:** My organization of this knowledge, practical examples from my work, and patterns I've found effective. I didn't invent these techniques — I learned them from the brilliant researchers and engineers who did the hard work. I'm just organizing and documenting practical application.
+
+**Standing on the shoulders of giants:** All core techniques come from researchers at institutions and companies doing groundbreaking work. This repo is my way of climbing that mountain and documenting the path for others.
+
+---
+
 ## 🚀 Quickstart
 
 ### **For Complete Beginners:**
@@ -91,19 +119,19 @@ This is not a static spec — it's an **evolving playbook** for how we build LLM
 ## 🧠 Design Principles
 
 - **🎯 Clarity First** — Every prompt block is modular and intentional
-- **🏗️ Structure > Style** — We treat prompts like functions, not text
+- **🏗️ Structure > Style** — Treat prompts like functions, not text
 - **🔒 Security-Aware** — Special attention to injection risks and ambiguity
-- **🌐 Multi-Model** — Designed for Claude, GPT, DeepSeek, Gemini from the start
-- **🔬 Open Research** — Pineapple Labs is an open-source-first R&D space
-- **📊 Evidence-Based** — Methodologies backed by peer-reviewed research and real-world testing
+- **🌐 Multi-Model** — Tested across Claude, GPT, DeepSeek, and Gemini
+- **🔬 Learning in Public** — Sharing what I learn as I build
+- **📊 Research-Based** — Built on peer-reviewed research (properly cited) and real-world testing
 
 ---
 
-## 🔬 Research Methodologies
+## 🔬 Core Frameworks
 
-### **Core Framework: Seven-Component Blueprint**
+### **Seven-Component Blueprint**
 
-Our [Prompt Engineering Blueprint](Prompt_Engineering_Blueprint.md) provides a complete framework:
+The [Prompt Engineering Blueprint](Prompt_Engineering_Blueprint.md) I've organized provides a systematic framework based on best practices from multiple sources:
 
 1. **System Declaration** (Agent Role Definition) + XML `<role>` tags
 2. **Instruction Block** with clear task separation + XML `<instructions>` tags
@@ -119,13 +147,20 @@ Our [Prompt Engineering Blueprint](Prompt_Engineering_Blueprint.md) provides a c
 
 ### **Truth Optimization Engine (TOE)**
 
-A breakthrough methodology for improving AI honesty and reliability:
+A systematic framework for encouraging AI honesty and reliability:
 
+**What it is:** A collection of prompt engineering techniques that encourage models to express uncertainty, state assumptions, and acknowledge limitations. This builds on AI safety research, model calibration work (Guo et al., 2017), and standard software documentation practices.
+
+**Core Techniques:**
 - **Explicit Uncertainty Acknowledgment**: `[CONFIDENT]`, `[LIKELY]`, `[UNCERTAIN]` markers
 - **Assumption Transparency**: Making AI assumptions explicit
 - **Limitation Disclosure**: Honest about what AI can't do
 - **Honest Reporting Framework**: Structured honesty in responses
 - **Validation Requirements**: Built-in self-checking mechanisms
+
+**Where it comes from:** I've synthesized these techniques from AI safety research, Anthropic's work on AI honesty, and standard software practices. My contribution is organizing them into a coherent framework and providing practical examples.
+
+**Real-world testing:** In my experience building AI agents for Pineapple Lab products, these structured approaches have significantly reduced instances where AI generates non-functional code or makes overconfident claims. I haven't conducted formal benchmarking yet, so I can't provide quantitative metrics.
 
 **Learn more** → [TOE Context Engineering for Agents](Pineapple_Lab_TOE_Context_Engineering_for_Agents.md)
 
@@ -133,17 +168,20 @@ A breakthrough methodology for improving AI honesty and reliability:
 
 ### **Advanced Techniques**
 
-**XML Tag Structuring** ([Guide](XML_Tag_Structuring_Guide.md))
+**XML Tag Structuring** (Anthropic Best Practice) ([Guide](XML_Tag_Structuring_Guide.md))
+- **Source:** Documented by Anthropic in their official prompt engineering guide
+- **My contribution:** Extensive testing and practical examples from building AI agents
 - Semantic organization of prompt components
 - Particularly powerful with Claude models
 - Improves parseability and accuracy
 - Enables complex multi-component prompts
 
-**Chain-of-Thought Reasoning** ([Guide](Advanced_Logic_Building_Guide.md))
+**Chain-of-Thought Reasoning** (Wei et al., 2022; Kojima et al., 2022) ([Guide](Advanced_Logic_Building_Guide.md))
+- **Source:** Introduced by Wei et al. (2022) with 19,810+ citations, extended by Kojima et al. (2022)
+- **My contribution:** Practical application patterns and production examples
 - Explicit step-by-step problem solving
 - Zero-shot and few-shot CoT patterns
 - Validation and self-correction mechanisms
-- Research-backed (Wei et al. 2022, Kojima et al. 2022)
 
 **Advanced Conditional Logic** ([Guide](Advanced_Logic_Building_Guide.md))
 - Complex decision trees and branching logic
@@ -170,21 +208,21 @@ A comprehensive 30-minute introduction for complete beginners covering:
 - Clear learning path from beginner to advanced
 
 ### **XML Tag Structuring Guide** ✨ NEW
-Advanced methodology for organizing complex prompts:
+Practical guide to Anthropic's XML tag technique:
 - Core tag categories and best practices
 - Chain-of-thought integration with XML
 - Multi-component prompt patterns
 - Conditional logic with XML structure
-- Real-world implementation examples
+- Real-world implementation examples from my projects
 
 ### **Advanced Logic Building Guide** ✨ NEW
-Sophisticated reasoning frameworks:
-- Zero-shot and few-shot chain-of-thought
+Application of research-backed reasoning frameworks:
+- Zero-shot and few-shot chain-of-thought (Wei et al., Kojima et al.)
 - Multi-condition logic trees
 - Recursive reasoning patterns
 - Prompt chaining (sequential and parallel)
 - Self-correction and validation mechanisms
-- Error detection and recovery
+- Error detection and recovery patterns
 
 ---
 
@@ -193,28 +231,39 @@ Sophisticated reasoning frameworks:
 - `prompt_registry.json` — Structured schema for prompts-as-code
 - `tests/` — Prompt regression + consistency tests
 - `agent_templates/` — Blueprints for repeatable, role-specific agents
-- `whitepaper.md` — Outlining Pineapple Labs' approach to modular agents
 - **Integration examples** — Demonstrating XML + CoT + TOE together
-- **Performance benchmarks** — Empirical validation of methodologies
-- **Industry comparisons** — How we compare to Google, OpenAI, Anthropic approaches
+- **Formal benchmarks** — Proper testing methodology with controlled experiments
+- **Case studies** — Detailed examples from production systems with real data
+- **Video tutorials** — Walking through techniques with practical demonstrations
+- **Community patterns** — Collection of patterns from other practitioners
 
 ---
 
-## 🧬 A Note from Me
+## 🧬 A Note from David
 
-This project is the backbone of how I build AI agents for products like OS Brick. Whether you're exploring prompt chaining, ReAct logic, memory containerization, or persona design — this repo is yours to explore, extend, and question.
+Hey, I'm David Edwards. I'm 21, living in South Africa, and building AI products like RITA and OS Brick at Pineapple Lab.
 
-The recent additions represent significant advances in the field:
-- **Starting Guide** makes prompt engineering accessible to everyone
-- **XML Tag Structuring** provides industrial-strength organization
-- **Advanced Logic Building** enables sophisticated reasoning frameworks
-- **Truth Optimization Engine** ensures AI honesty and reliability
+**Here's the honest truth:** I'm not a PhD researcher or an AI scientist. I'm a builder who loves to learn. When I started with prompt engineering, I spent months reading scattered docs from Anthropic, Google, and OpenAI. I studied papers by Wei, Kojima, and others. It was overwhelming.
 
-These aren't just theoretical frameworks — they're battle-tested methodologies used in production AI systems.
+This repo is what I wish existed when I started: everything organized, practical examples from real projects, and a clear path from "complete beginner" to "building production systems."
 
-Thanks for being curious,
+**What makes this valuable:**
+- **Starting Guide** — I distilled months of learning into 30 minutes
+- **XML Tag Structuring** — Anthropic's technique with my real-world examples
+- **Advanced Logic Building** — Wei & Kojima's research applied to actual products
+- **Truth Optimization Engine** — My framework for AI honesty, synthesized from multiple sources
 
-**– David Edwards / Pineapple Labs**
+**I didn't invent these techniques.** But I've tested them for hundreds of hours, organized them coherently, and documented what actually works in production.
+
+**Why I'm sharing:** I believe in learning in public. I'm standing on the shoulders of giants and documenting the climb so you don't have to figure it all out alone like I did.
+
+**Feedback is gold:** If you spot errors, have suggestions, or discover better patterns — please contribute. I'm learning too, and honest corrections make this better for everyone.
+
+Thanks for being curious and learning with me,
+
+**– David Edwards**  
+*21-year-old builder, learning in public*  
+*Pineapple Lab, South Africa*
 
 ---
 
@@ -341,25 +390,25 @@ We're building an interactive tool that will allow you to:
 
 ---
 
-## 🏆 What Makes Pineapple Lab Different
+## 🏆 Why This Guide Exists
 
-### **Research-Backed**
-Every methodology is supported by peer-reviewed research or extensive real-world testing. We cite sources and validate claims.
+### **Honest About Sources**
+Every technique is properly attributed. I cite the researchers (Wei et al., Kojima et al.) and companies (Anthropic, Google, OpenAI) who did the original work. My contribution is organization and practical application.
 
 ### **Comprehensive Coverage**
-From complete newbie to advanced production systems — we cover the full spectrum with appropriate depth at each level.
+From complete newbie to advanced production systems — I've organized the full learning journey with appropriate depth at each level. This is what I wish existed when I started.
 
 ### **Practical Focus**
-Real-world examples, production-tested patterns, and actionable guidance. No theoretical fluff.
+Real-world examples from my work, production-tested patterns, and actionable guidance. No theoretical fluff — just what actually works.
 
 ### **Integration-First**
-All methodologies work together seamlessly. XML tags + Chain-of-thought + Truth Optimization = Powerful, reliable AI systems.
+I show how techniques work together: XML tags + Chain-of-thought + Truth Optimization patterns = More reliable AI systems.
 
-### **Open & Collaborative**
-Built by the community, for the community. Your contributions make this better for everyone.
+### **Learning in Public**
+Built to share knowledge openly. Your contributions and corrections make this better for everyone.
 
 ### **Multi-Model**
-Techniques tested across GPT (OpenAI), Claude (Anthropic), Gemini (Google), and DeepSeek. Model-agnostic where possible.
+Techniques I've tested across GPT (OpenAI), Claude (Anthropic), Gemini (Google), and DeepSeek.
 
 ---
 
@@ -461,22 +510,88 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 
 ---
 
-## 🌟 About Pineapple Lab
+## 🎓 My Actual Contributions
 
-📚 **Pineapple Lab – Open Research & Publications**
+To be completely transparent about what I've added vs. what I learned from others:
 
-At Pineapple Lab, we believe in building openly and collaboratively. Our research and technical blueprints are made freely available to the community to learn from, use, and improve upon. These resources are published to share our insights and experiments in AI, automation, and deep tech, advancing the field through transparent collaboration and evidence-based methodologies.
+### **Things I Learned From Others (With Credit):**
+- **Chain-of-Thought reasoning** → Wei et al. (2022), Kojima et al. (2022)
+- **XML tag structuring** → Anthropic official documentation
+- **Few-shot prompting** → Brown et al. (2020)
+- **System prompts, clear instructions** → Universal best practices from all major AI labs
+- **Prompt chaining concepts** → ReAct paper, AutoGPT, and agent research
+- **Model calibration** → Guo et al. (2017)
 
-**We're not building a product. We're building a movement toward more reliable, honest, and sophisticated AI systems.**
+### **Things I've Contributed:**
+1. **Organization:** Compiled scattered techniques from dozens of sources into one coherent framework
+2. **Examples:** Created 50+ specific examples from building PropTech AI agents (RITA, OS Brick)
+3. **Patterns:** Documented recurring patterns I've found effective in production
+4. **Synthesis:** Connected techniques from different sources into integrated workflows
+5. **Practical focus:** Emphasized what works in production vs. pure theory
+6. **Domain application:** Showed how to apply general techniques to specific domains
+7. **Learning path:** Created structured progression from beginner to advanced
+8. **TOE Framework:** Organized AI honesty techniques into a systematic approach
 
-Join us.
+### **The Real Value:**
+You could spend months reading Anthropic's docs, Google's docs, OpenAI's docs, and 20+ research papers. 
+
+Or you could read this guide where I've done that work and organized it for you.
+
+**That's the service I'm providing: curation, synthesis, and practical application guidance.**
 
 ---
 
-**Last Updated**: January 2025  
-**Version**: 2.0 (Major upgrade with beginner guide, XML structuring, and advanced logic)  
+## 🛣️ Roadmap: From Documentation to Research
+
+### **Current State (v2.0):**
+This is a practitioner's guide based on synthesis of existing work.
+
+### **Future Goals:**
+
+#### Short-term (Next 6 months)
+- [ ] Add 100+ more real-world examples from RITA and other Pineapple Lab products
+- [ ] Create video tutorials demonstrating techniques
+- [ ] Build community of practitioners sharing patterns
+- [ ] Document failure cases and anti-patterns  
+- [ ] Complete comprehensive bibliography with all sources
+
+#### Medium-term (6-12 months)
+- [ ] Conduct **formal benchmarking** with proper methodology
+- [ ] Collaborate with researchers to **validate claims** with data
+- [ ] Publish **case studies** with quantitative results from production
+- [ ] Open-source example codebases showing techniques in action
+- [ ] Present findings at conferences (as practitioner insights)
+
+#### Long-term (1-2 years)
+- [ ] If pursuing academic path: Partner with researchers on formal studies
+- [ ] Develop novel techniques specific to my domain (if they emerge)
+- [ ] Build tools that automate these patterns
+- [ ] Publish peer-reviewed papers (if warranted by genuine novel findings)
+
+### **The Journey:**
+I'm starting as a documenter and practitioner. My goal is to eventually contribute original research if I discover something genuinely novel. But I'm not there yet, and I won't pretend I am.
+
+**Honest positioning now → Credible voice later.**
+
+---
+
+## 🌟 About Pineapple Lab
+
+📚 **Pineapple Lab – Learning in Public**
+
+At Pineapple Lab, I believe in building openly and learning collaboratively. These resources are made freely available so others can learn from what I'm discovering, use what's helpful, and improve upon it.
+
+**I'm not claiming to revolutionize AI. I'm just sharing what I learn as I build, hoping it helps others on the same journey.**
+
+Learn with me.
+
+---
+
+**Last Updated**: October 2025  
+**Version**: 2.1 (Honest repositioning - practitioner's guide, not research)  
+**Previous**: v2.0 (Beginner guide, XML structuring, advanced logic)  
 **Repository**: [github.com/pineapple-lab/docs](https://github.com/pineapple-lab/docs)
 
 ---
 
-*Let's build smarter, more reliable AI systems together.* 🚀
+*Let's learn and build together, honestly.* 🚀

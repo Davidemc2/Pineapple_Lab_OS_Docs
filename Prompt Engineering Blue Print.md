@@ -10,17 +10,19 @@
 
 ## 🔗 Purpose of This Guide
 
-This guide is part of an evolving set of findings from Pineapple Labs. I'm David Edwards, and this blueprint represents my ongoing exploration into prompt engineering as it relates to the broader field of AI engineering.
+This guide is part of my learning journey at Pineapple Lab. I'm David Edwards, and this blueprint represents how I've organized and synthesized prompt engineering knowledge from multiple sources.
 
-The idea behind publishing this is to open-source the design patterns, techniques, and structures I've found useful when working with LLMs like GPT, Claude, DeepSeek, and Gemini. Prompting isn't just about formatting text — it's about shaping behavior, logic, and reliability inside intelligent systems.
+The idea behind publishing this is to share the design patterns, techniques, and structures I've found useful when working with LLMs like GPT, Claude, DeepSeek, and Gemini. Prompting isn't just about formatting text — it's about shaping behavior, logic, and reliability inside intelligent systems.
 
-**This Blueprint is the master methodology** that integrates all Pineapple Lab techniques:
-- **Truth Optimization Engine (TOE)** - Woven throughout all 7 components
-- **XML Tag Structuring** - Referenced for advanced organization
-- **Chain-of-Thought Reasoning** - Integrated into Logic Block
-- **Context Engineering** - Applied for production AI agents
+**Important Context:** This blueprint integrates techniques from multiple authoritative sources (Anthropic, Google, OpenAI, academic research) into one cohesive framework. I didn't invent these individual techniques — I've organized them into a systematic approach that works for me.
 
-The goal is to make these findings public, collaborative, and useful — not just for Pineapple Labs, but for builders, researchers, and technologists everywhere who care about designing more trustworthy, performant agents.
+**This Blueprint integrates:**
+- **Truth Optimization Engine (TOE)** - My framework synthesizing AI honesty techniques, woven throughout all 7 components
+- **XML Tag Structuring** - Anthropic's technique, referenced for advanced organization
+- **Chain-of-Thought Reasoning** - Wei et al. & Kojima et al.'s research, integrated into Logic Block
+- **Context Engineering** - Best practices from multiple sources, applied for production AI agents
+
+The goal is to make this knowledge accessible and useful — for builders, learners, and anyone building with AI who wants practical, organized guidance.
 
 ---
 

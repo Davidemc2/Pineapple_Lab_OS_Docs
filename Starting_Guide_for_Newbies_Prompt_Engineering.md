@@ -466,5 +466,5 @@ Welcome to prompt engineering. Now go build something amazing.
 
 ---
 
-*Part of the Pineapple Lab OS Docs - Open Research & Publications*
+*Part of the Pineapple Lab OS Docs - Practitioner's Guide Series*
 
